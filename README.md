@@ -8,7 +8,7 @@ pozostałe.append("Buzzer")
 pozostałe.append("LED lights")
 
 Battery1 = [1300,1400,1500,1350]
-Battery2 = [1500,1600,1500,1500]
+Battery2 = [1500,1623,1500,1715]
 pozostałe.remove("Radiator")
 elektronika.extend(pozostałe)
 elektronika.extend(Battery1+Battery2)
@@ -22,7 +22,7 @@ for i in Battery1:
 
 for i in Battery2:
     if i != 1500:
-        print("This battery doesn't exist")
+        print("Such battery doesn't exist")
 
 
 print(*elektronika, sep="\n")
@@ -36,3 +36,7 @@ print("| %7s                | %9s |" % ("Silniki", elektronika.count("Motor")))
 print("| %10s             | %9s |" % ("Regulatory", elektronika.count("ESC")))
 print("| %6s                 | %9s |" % ("Anteny", elektronika.count("Antenna")))
 print("-"*szer)
+
+
+
+
