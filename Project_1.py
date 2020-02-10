@@ -1,5 +1,5 @@
 # myfirstproject
-sample project
+
 print("Lista podzespołów drona_1:")
 elektronika = ["Motor","Motor","Motor","Motor","ESC","ESC","ESC","PDB","FC","Receiver RX", "Transmitter VTX", "Camera receiver VTX","Camera"]
 elektronika.insert(7,"ESC")
