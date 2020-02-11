@@ -9,9 +9,24 @@ pozostałe.append("LED lights")
 
 Battery1 = [1300,1400,1500,1350]
 Battery2 = [1500,1623,1500,1715]
+for capacity in Battery1:
+    print("Battery %s mAh"% capacity)
+
+
+
 pozostałe.remove("Radiator")
 elektronika.extend(pozostałe)
 elektronika.extend(Battery1+Battery2)
+
+for element in elektronika:
+    if type(element)==int:
+        print("Battery %s mAh" % element)
+    else:
+        print(element)
+
+
+#print(*elektronika, sep="\n")
+
 for i in Battery1:
     if i == 1300:
         print("Battery 1300mAh")
@@ -25,8 +40,6 @@ for i in Battery2:
         print("Such battery doesn't exist")
 
 
-print(*elektronika, sep="\n")
-
 print("Zestawienie ilościowe")
 szer = 38
 print("-"*szer)
@@ -36,6 +49,12 @@ print("| %7s                | %9s |" % ("Silniki", elektronika.count("Motor")))
 print("| %10s             | %9s |" % ("Regulatory", elektronika.count("ESC")))
 print("| %6s                 | %9s |" % ("Anteny", elektronika.count("Antenna")))
 print("-"*szer)
+
+
+k = "uid"
+v = "sa"
+print("%s=%s" % (k, v))
+print(Battery2)
 
 
 
