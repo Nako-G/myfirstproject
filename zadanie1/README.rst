@@ -40,6 +40,7 @@ Poczatkowa tresc programu
 Opis
 ----
 W tym programie do opanowania jest umiejesnosc:
+
 - tworzenia i wywolywania funkcji
 - formatowania w print
 - uzycia petli for oraz zmiennej pomocniczej do wyciagania elementow listy
