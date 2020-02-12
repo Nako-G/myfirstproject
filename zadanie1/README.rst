@@ -10,6 +10,7 @@ Poczatkowa tresc programu
 -------------------------
 
 .. code-block:: python
+
   # program1.py
   def czesc1():
      lista1 = [1, '2', '-5', 4*4, 12]
@@ -35,3 +36,13 @@ Poczatkowa tresc programu
   
   if __name__ == "__main__":
      main()
+
+Opis
+----
+W tym programie do opanowania jest umiejesnosc:
+- tworzenia i wywolywania funkcji
+- formatowania w print
+- uzycia petli for oraz zmiennej pomocniczej do wyciagania elementow listy
+- uzycia typu 'set' oraz konwersji z i do listy
+- uzycia metody metody 'get' obiektu dict 
+
