@@ -1,60 +1,40 @@
 def procedura1():
-    lista1 = [1, '2', '-5', 4 * 4, 12]
-    lista2 = [1, 1, 1, 1, 1]
-    lista1 = [int(i) for i in lista1]
-    print("lista1=", lista1)
-    print("lista2=", lista2)
-
-    for i in lista1:
-        print("Suma pierwszych elementów z listy 1 i 2")
-        print("1+1=", int(lista1[0] + lista2[0]))
-        break
-
-    for i in lista1:
-        print("Suma drugich elementów z listy 1 i 2")
-        print("2+1=", int(lista1[1] + lista2[1]))
-        break
-
-    for i in lista1:
-        print("Suma trzecich elementów z listy 1 i 2")
-        print("-5+1=", int(lista1[2] + lista2[2]))
-        break
-
-    for i in lista1:
-        print("Suma czwartych elementów z listy 1 i 2")
-        print("4*4+1=", int(lista1[3] + lista2[3]))
-        break
-
-    for i in lista1:
-        print("Suma piątych elementów z listy 1 i 2")
-        print("12+1=", int(lista1[4] + lista2[4]))
-        break
+  lista1 = [1, '2', '-5', 4 * 4, 12]
+  lista2 = [1, 1, 1, 1, 1]
+  lista1 = [int(i) for i in lista1]
+  print("lista1 =", lista1)
+  print("lista2 =", lista2)
+  print("\n" "Suma elementów listy1 oraz listy2")
 
 
-def procedura2():
-    slownik1 = {"a": 1, "b": 2, "c": 3}
-    slownik2 = {"a": 1, "c": 3, "d": 4}
+  for i in range(len(lista1)):
+    a = lista1[i]
+    b = lista2[i]
+    print("Dla %s+%s=%s" %(a,b,a+b))
 
-def mergeDict(slownik1, slownik2):
-    slownik3 = {**slownik1, **slownik2}
-    print(slownik3)
+  print("\n" "-------------------------------------")
+def procedura2():  
+  slownik1 = {"a": 1, "b": 2, "c": 3}
+  slownik2 = {"a": 1, "c": 3, "d": 4}
+  print("\n" "slownik1 = ", slownik1)
+  print("slownik2 = ", slownik2)
 
-    for key, value in slownik3.items():
-        if key in slownik1 and key in slownik2:
-            slownik3[key] = [value, slownik1[key]]
+  print("\n" "a) Unikalna lista kluczy slownika1 oraz slownika2:")
+  print("slownik1 + slownik2 =", set(list(slownik1.keys())+list(slownik2.keys())))
+  klucze = (list(set(list(slownik1.keys())+list(slownik2.keys()))))
 
-    return slownik3
-    slownik3 = mergeDict(slownik1, slownik2)
-
-    print(slownik3)
-
-
-
+  print("\n" "b) slownik zawierającay liste kluczy:")
+  for i in klucze:
+    a = (slownik1.get(i,0))
+    b = (slownik2.get(i,0))
+    wartosci = (a + b)
+  
+    print("Wartość dla klucza %s=>%s" %(i,wartosci) )
 
 def main():
-    procedura1()
-    procedura2()
-
+   """ To jest glowna procedura/funkcja programu uruchamiana ponizej. """
+   procedura1()
+   procedura2()
 
 if __name__ == "__main__":
-    main()
+   main()
