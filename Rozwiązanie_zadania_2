@@ -36,9 +36,9 @@ def procedura3():
       a = ([(i, "%s" % slownik1.get(i, 0)) for i in lista1])
       b = ([(i, "%s" % slownik2.get(i, 0)) for i in lista1])
       if a >=b:
-         print(a)
+         print(dict(a))
       else:
-         print(b)
+         print(dict(b))
 
 def main():
             """ To jest glowna procedura/funkcja programu uruchamiana ponizej. """
