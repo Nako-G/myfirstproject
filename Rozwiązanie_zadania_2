@@ -1,0 +1,57 @@
+def procedura1():
+   lista1 = [1, '2', '-5', 4 * 4, 12]
+   lista2 = [1, 1, 1, 1, 1]
+   lista1 = [int(i) for i in lista1]
+
+   print("\n" "Wymagany warunek: wartość z listy1> wartośći z listy2")
+
+   for i in range(len(lista2)):
+      a = lista1[i]
+      b = lista2[i]
+      if b > a:
+         print("\n" "Wartość %s z listy1 spełnia wymagany warunek" % b)
+      else:
+         print("\n" "Ta pozycja z listy1 nie spełnia wymaganego warunku")
+
+
+def procedura2():
+   slownik1 = {"a": 1, "b": 2, "c": 3}
+   slownik2 = {"a": 1, "c": 3, "d": 4}
+   lista1 = ['a', 'b', 'x', 'd']
+   print("slownik1=", slownik1)
+   print("slownik1=", slownik2)
+   print("lista1", lista1)
+   print("\n")
+   for i in lista1:
+      a = (slownik1.get(i, 0))
+      b = (slownik2.get(i, 0))
+      print("Wartość dla klucza %s: %s+%s=%s" % (i, a, b, a + b))
+
+def procedura3():
+   slownik1 = {"a": 1, "b": 2, "c": 3}
+   slownik2 = {"a": 1, "c": 3, "d": 4}
+   lista1 = ['a', 'b', 'x', 'd']
+
+   slownik3 = dict([(i, "%s") for i in lista1])
+   print(slownik3)
+
+   for i in range(len(slownik3)):
+      a = (slownik1.get(i, 0))
+      b = (slownik2.get(i, 0))
+      if a >= b:
+         wartosc1 = (dict([lista1[i, a]) in slownik1)
+         else:
+         wartosc2 = b in slownik2
+
+         print(wartosc1)
+
+
+
+         def main():
+            """ To jest glowna procedura/funkcja programu uruchamiana ponizej. """
+            procedura1()
+            procedura2()
+            procedura3()
+
+         if __name__ == "__main__":
+            main()
