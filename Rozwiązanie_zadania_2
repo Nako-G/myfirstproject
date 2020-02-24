@@ -40,7 +40,7 @@ def procedura3():
          slownik3[key] = a
       else:
          slownik3[key] = b
-         print(slownik3)
+   print(slownik3)
 
 def main():
             """ To jest glowna procedura/funkcja programu uruchamiana ponizej. """
