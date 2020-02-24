@@ -32,13 +32,15 @@ def procedura3():
    slownik2 = {"a": 1, "c": 3, "d": 4}
    lista1 = ['a', 'b', 'x', 'd']
 
-   for i in range(len(lista1)):
-      a = ([(i, "%s" % slownik1.get(i, 0)) for i in lista1])
-      b = ([(i, "%s" % slownik2.get(i, 0)) for i in lista1])
-      if a >=b:
-         print(dict(a))
+   slownik3 = {}
+   for key in lista1:
+      a = slownik1.get(key,0)
+      b = slownik2.get(key,0)
+      if a>=b:
+         slownik3[key] = a
       else:
-         print(dict(b))
+         slownik3[key] = b
+   print(slownik3)
 
 def main():
             """ To jest glowna procedura/funkcja programu uruchamiana ponizej. """
