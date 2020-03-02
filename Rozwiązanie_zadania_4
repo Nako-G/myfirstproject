@@ -1,7 +1,7 @@
 file = open("Tablica.txt")
 listy = []
 for line in file:
-    listy.append(line.split())
+    listy.append(line.rsplit("|"))
 #    print(listy)
 
 for x in range(len(listy)):
@@ -11,12 +11,14 @@ for x in range(len(listy)):
         punkt1 = lista[y]
         punkt1 = punkt1.replace("|"," ")
 #        print(punkt1)
-        for z in range(len(punkt1)):
-            punkt2 = punkt1[z]
+#       for z in range(len(punkt1)):
+#            punkt2 = punkt1[z]
 #            print(punkt2)
-            if punkt2 == "X":
-                a = listy[x-1][y]
-                b = listy[x+1][y]
-                c = listy[x][y-1]
+        if punkt1 == "X":
+            a = int(listy[x-1][y])
+            b = int(listy[x+1][y])
+            c = int(listy[x][y-1])
+            d = int(listy[x][y+1])
+            X = ((a+b+c+d)/4)
 
-                print(a,b,c)
+            print(int(X))
