@@ -1,0 +1,12 @@
+class MojeStringi():
+    def __init__(self):
+        self.string1 = "1,2,3... próba mikrofonu"
+    def getString(self):
+        self.string2 = input()
+    def printString(self):
+        print(self.string2.upper())
+
+string1 = MojeStringi()
+string2 = MojeStringi()
+string2.getString()
+string2.printString()
