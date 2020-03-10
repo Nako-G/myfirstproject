@@ -3,6 +3,16 @@ class Argumenty:
         pass
 
     def metoda1(self,x,y):
-        if int == type(x):
+        if int == type(x) and int == type(y):
             print(x**y)
-        elif:
+        elif str == type(x) and int == type(y):
+                print(x*y)
+        elif list == type(x):
+            print(max(list(x)))
+        else:
+            pass
+        if int != type(y):
+            pass
+
+a = Argumenty()
+a.metoda1(3,2)
