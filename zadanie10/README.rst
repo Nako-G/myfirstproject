@@ -16,25 +16,25 @@ Napisz program, który wczyta od użytkownika liczbę X, a następnie wyświetli
 Podpowiedz: wystarczy wyswietlanie * i spacji.
 
  np.: 5 ->
-
-\*
-\* *
-\*   *
-\*     *
-\* * * * *
-
+r"""
+*
+* *
+*   *
+*     *
+* * * * *
+"""
 
 Zadanie 3
 =========
 Napisz program, który wczyta od użytkownika liczbę X, a następnie wyświetli kwadrat z gwiazdek o długości boku X,
 
 np.: 4 ->
-
-\*  *  *  *
-\*        *
-\*        *
-\*  *  *  *
-
+r"""
+*  *  *  *
+*        *
+*        *
+*  *  *  *
+"""
 
 Zadanie 4
 =========
