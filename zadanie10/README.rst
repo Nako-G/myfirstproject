@@ -13,24 +13,13 @@ Zadanie 2
 =========
 Napisz program, który wczyta od użytkownika liczbę X, a następnie wyświetli TRÓJKĄT prostokątny o długości przyprostokątnej X,
 
-Podpowiedz: wystarczy wyswietlanie * i spacji.
+Podpowiedz: wystarczy wyswietlanie * i spacji w odpowiednich ilosciach w kazdej z kolejnych linii.
 
- np.: 5 ->
-  .
-  . .
-  .   .
-  .     .
-  . . . . .
 
 Zadanie 3
 =========
 Napisz program, który wczyta od użytkownika liczbę X, a następnie wyświetli kwadrat z gwiazdek o długości boku X,
 
-np.: 4 ->
-  .  .  .  .
-  .        .
-  .        .
-  .  .  .  .
 
 Zadanie 4
 =========
