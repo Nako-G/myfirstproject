@@ -17,11 +17,11 @@ Podpowiedz: wystarczy wyswietlanie * i spacji.
 
  np.: 5 ->
 
-*
-* *
-*   *
-*     *
-* * * * *
+\*
+\* *
+\*   *
+\*     *
+\* * * * *
 
 
 Zadanie 3
@@ -30,10 +30,10 @@ Napisz program, który wczyta od użytkownika liczbę X, a następnie wyświetli
 
 np.: 4 ->
 
-*  *  *  *
-*        *
-*        *
-*  *  *  *
+\*  *  *  *
+\*        *
+\*        *
+\*  *  *  *
 
 
 Zadanie 4
