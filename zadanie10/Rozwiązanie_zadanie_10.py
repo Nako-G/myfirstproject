@@ -10,9 +10,9 @@ for próba in range(próba, -1, -1):
 #    print("Pozostało {0} prób.".format(próba))
 
     if liczba < x:
-        print("ZA MALA LICZBA, spróbuj jeszcze raz (pozostało {0} prób)".format(próba))
+        print("ZA MALA LICZBA (pozostało {0} prób)".format(próba))
     elif liczba > x:
-        print("ZA DUZA LICZBA, spróbuj jeszcze raz (pozostało {0} prób)".format(próba))
+        print("ZA DUZA LICZBA (pozostało {0} prób)".format(próba))
     else:
         if liczba == x:
             print("Brawo, wygrałeś!")
