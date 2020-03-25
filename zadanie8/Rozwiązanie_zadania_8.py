@@ -8,11 +8,15 @@ class Argumenty:
         elif str == type(x) and int == type(y):
                 print(x*y)
         elif list == type(x):
-            print(max(list(x)))
+            lista2 = []
+            for i in x:
+                if type(i) == int:
+                    lista2.append(i)
+            print(max(lista2))
         else:
             pass
         if int != type(y):
             pass
 
 a = Argumenty()
-a.metoda1(3,2)
+a.metoda1([3,5,"a",3,7],2)
