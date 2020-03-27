@@ -30,7 +30,7 @@ x = int(input("Podaj długość boku kwadratu: "))
 
 for i in range(x):
     for i in range(x):
-        print("*", end=" ")
+        print("*", end="  ")
     print()
     
 ZADANIE 4
