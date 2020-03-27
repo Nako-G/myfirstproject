@@ -21,7 +21,7 @@ else:
     
     
 ZADANIE 2
-x = int(input("Podaj przyprostokątnej: "))
+x = int(input("Podaj długość przyprostokątnej: "))
 for x in range(0, x):
     print((x+1) * "*")
     
