@@ -18,3 +18,12 @@ for próba in range(próba, -1, -1):
         break
 else:
     print("Koniec gry, niestety przegrałeś :( Szukana liczba to: ", x)
+    
+    
+ZADANIE 2
+x = int(input("Podaj przyprostokątnej: "))
+for x in range(0, x):
+    print((x+1) * "*")
+    
+ZADANIE 3
+
