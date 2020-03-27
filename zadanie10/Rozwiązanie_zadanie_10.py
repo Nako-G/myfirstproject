@@ -26,4 +26,11 @@ for x in range(0, x):
     print((x+1) * "*")
     
 ZADANIE 3
+x = int(input("Podaj długość boku kwadratu: "))
 
+for i in range(x):
+    for i in range(x):
+        print("*", end=" ")
+    print()
+    
+ZADANIE 4
