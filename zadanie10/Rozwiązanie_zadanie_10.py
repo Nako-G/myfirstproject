@@ -25,6 +25,14 @@ x = int(input("Podaj długość przyprostokątnej: "))
 for x in range(0, x):
     print((x+1) * "*   ")
     
+# version 2
+x = int(input("Podaj długość przyprostokątnej: "))
+print("*")
+for x in range(0, x):
+    print("*", (x+1) * "  ","*",sep="")
+print((x+1) * "*   ")
+    
+    
 ZADANIE 3
 x = int(input("Podaj długość boku kwadratu: "))
 
