@@ -41,3 +41,10 @@ def najczesciej_wystepuje(list):
 
     return element
 print("Najczęściej występująca liczba w podanej liście to:",najczesciej_wystepuje(list))
+
+ZADANIE_3
+
+import sqlite3
+conn = sqlite3.connect("baza_danych.db")
+print(sqlite3.sqlite_version)
+
