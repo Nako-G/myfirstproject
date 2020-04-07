@@ -48,3 +48,33 @@ import sqlite3
 conn = sqlite3.connect("baza_danych.db")
 print(sqlite3.sqlite_version)
 
+ZADANIE_4
+
+import sqlite3
+connection = sqlite3.connect("Tabela.db")
+cursor = connection.cursor()
+Tabela = """CREATE TABLE IF NOT EXISTS Pomiary 
+        (Dron1 text,
+        Dron2 text,
+        SO2 integer, 
+        CO integer, 
+        O3 integer,
+        NO2 integer,
+        Pył_PM25 integer,
+        Pył_PM10 integer
+        )"""
+cursor.execute(Tabela)
+#Tabela = ("""INSERT INTO Pomiary VALUES (
+#        24, 62, 65, 26, 645, 33333
+#        )""")
+
+#cursor.execute(Tabela)
+#connection.commit()
+Tabela = 'SELECT * FROM Pomiary WHERE Pył_PM10 = 33333'
+cursor.execute(Tabela)
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+connection.close()
