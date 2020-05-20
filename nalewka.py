@@ -70,7 +70,7 @@ def program2():
     while True:
         try:
             x = float((input("Podaj jaką objętość roztworu chcesz otrzymać [ml]: ")))
-            if x <= 0:
+            if x <= 0 :
                 print("Wartość nie może być ujemna! Spróbuj jeszcze raz")
                 continue
             else:
